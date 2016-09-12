@@ -1,0 +1,35 @@
+{
+    "env": {
+        "browser": true,
+        "amd": true,
+        "node": true
+    },
+    "rules": {
+        "camelcase": 2,
+        "comma-dangle": [2, "never"],
+        "comma-spacing": [2],
+        "curly": 2,
+        "eqeqeq": [2, "smart"],
+        "guard-for-in": 2,
+        "indent": [2, 4, {"SwitchCase": 1}],
+        "max-depth": [2, 2],
+        "new-cap": [2, {
+            "capIsNewExceptions": ["jasmine.Any"]
+        }],
+        "no-extra-semi": 2,
+        "no-multi-spaces": 2,
+        "no-multiple-empty-lines": [2, {"max": 1}],
+        "no-trailing-spaces": 2,
+        "no-undef": 2,
+        "no-unused-vars": 2,
+        "quotes": [2, "single"],
+        "semi": [2, "always"],
+        "space-before-blocks": [2, "always"],
+        "space-before-function-paren": [2, { "anonymous": "always", "named": "never" }],
+        "space-infix-ops": 2
+    },
+    "globals": {
+        "requirejs": true,
+        "Promise": true
+    }
+}

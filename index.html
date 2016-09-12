@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+        body {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .pbi:hover,
+        .clickable:hover,
+        .reproStepOption:hover {
+            background: lightgray;
+            text-decoration: underline;
+        }
+
+        @-webkit-keyframes highlight {
+            to {
+                text-shadow: 0 0 10px red;
+            }
+        }
+        @-moz-keyframes highlight {
+            to {
+                text-shadow: 0 0 10px red;
+            }
+        }
+        @-o-keyframes highlight {
+            to {
+                text-shadow: 0 0 10px red;
+            }
+        }
+        @keyframes highlight {
+            to {
+                text-shadow: 0 0 10px red;
+            }
+        }
+
+        .highlighted {
+            -webkit-animation: highlight .5s infinite alternate;
+            -moz-animation:    highlight .5s infinite alternate;
+            -o-animation:      highlight .5s infinite alternate;
+            animation:         highlight .5s infinite alternate;
+        }
+    </style>
+</head>
+
+<body style="height: 100%; margin: 0; overflow: hidden">
+    <div id="main" style="height: 100%"></div>
+
+    <script src="out/bundle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+# editorconfig.org
+root = true
+
+[*]
+indent_style = space
+indent_size = 4
+# DO NOT USE 'end_of_line' setting because it does the wrong thing for cross-platform dev teams
+# in the meantime, leave it empty, which WebStorm will do the right thing, specifically
+#     if the file exists, use what it already uses, *else* use the OS-convention
+# Git will normalize CRLF to LF anyways for encoding so that it comes out the right way on Mac.
+# https://github.com/editorconfig/editorconfig/issues/226
+# end_of_line = crlf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true

@@ -1,0 +1,13 @@
+{
+    "name": "tanks",
+    "version": "1.0.0",
+    "description": "Entry for JS13K 2016",
+    "main": "index.html",
+    "scripts": {
+        "dev": "watchify js/main.js -o out/bundle.js --debug",
+        "prod": "browserify js/main.js | uglifyjs --compress --mangle > out/bundle.min.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC"
+}
